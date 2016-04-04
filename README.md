@@ -71,6 +71,11 @@ or within each individual server task.
       // (e.g. opts: ['node_modules/coffee-script/bin/coffee'] will correctly parse coffee-script)
       opts: [ ],
       args: [ ],
+	  
+	  //This options allows overriding/adding environment variables.
+	  env: {
+	  	"ENV_VAR_NAME": "somevalue"
+	  }
 
       // Setting to `false` will effectively just run `node path/to/server.js`
       background: true,
